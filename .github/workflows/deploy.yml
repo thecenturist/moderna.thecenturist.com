@@ -27,4 +27,4 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_DEFAULT_REGION: us-east-1
           AWS_BUCKET: moderna.thecenturist.com
-        run: aws s3 mb s3://moderna.thecenturist.com/
+        run: aws s3 cp . s3://moderna.thecenturist.com/ --recursive
